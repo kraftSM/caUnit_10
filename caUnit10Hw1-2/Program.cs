@@ -31,7 +31,6 @@ namespace caUnit10Hw1_2
         {
             Console.WriteLine("{0}|{1}:Startig ", UnTitle, ExTitle);
             Console.WriteLine("{0} ", Promt);
-            //
 
             Console.WriteLine("\n{0}: Finishing.", ExTitle);
             Console.WriteLine("{0}: Finished.\nPress any key.", UnTitle);
