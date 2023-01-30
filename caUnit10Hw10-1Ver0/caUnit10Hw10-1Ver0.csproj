@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FDD3AB5-C2D6-41B1-B10B-56B2B430E28D}</ProjectGuid>
+    <ProjectGuid>{A5E1CA7E-1CE8-4443-9F17-DC014C0E8260}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>caUnit10Hw1_2</RootNamespace>
-    <AssemblyName>caUnit10Hw1-2</AssemblyName>
+    <RootNamespace>caUnit10Hw10_1Ver0</RootNamespace>
+    <AssemblyName>caUnit10Hw10-1Ver0</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
