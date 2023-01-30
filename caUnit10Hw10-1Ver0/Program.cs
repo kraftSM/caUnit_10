@@ -59,15 +59,14 @@ namespace caUnit10Hw10_1Ver0
             Console.WriteLine("{0}|{1}:Startig ", UnTitle, ExTitle);
             Console.WriteLine("{0} ", Promt);
 
-            //inStr = Console.ReadLine();
             do
             {
-                Console.WriteLine("{0}  Введите первое слагаемое", Promt);// { }
+                Console.WriteLine("{0}  Введите первое слагаемое", Promt);
             }
             while (!isCorInput(Console.ReadLine(), ref Val1));
             do
             {
-                Console.WriteLine("{0}  Введите второе слагаемое", Promt);// { }
+                Console.WriteLine("{0}  Введите второе слагаемое", Promt);
             }
             while (!isCorInput(Console.ReadLine(), ref Val2));
  
