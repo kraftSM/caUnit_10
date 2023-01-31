@@ -28,7 +28,9 @@ namespace caUnit10Hw2_2Ver0
             Console.WriteLine("Exept:,\t" + ex.Message);
             Console.WriteLine("Exept:,\t" +ex.StackTrace);
             Console.ForegroundColor = ConsoleColor.White;
-        }    
+        }
+
+    
         public void Message(string message)
         {
             Console.WriteLine("Msg__:,\t" + message); 

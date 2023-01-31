@@ -53,6 +53,7 @@ namespace caUnit10Hw2_2Ver0
             //Console.WriteLine("{0}  {1}+{2}={3}", Promt, Val1, Val2, Calc.GetResult(Val1, Val2));
             Calc.GetResult(Val1, Val2);
 
+
             Console.WriteLine("\n{0}: Finishing.", ExTitle);
             Console.WriteLine("{0}: Finished.\nPress any key.", UnTitle);
             Console.ReadKey();
