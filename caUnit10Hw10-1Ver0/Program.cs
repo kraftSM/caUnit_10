@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace caUnit10Hw10_1Ver0
+namespace caUnit10Hw10_1_1Ver0
 {
     internal class Program
-    {
+    {           
         static string UnitName = "Un:10";
         static string UnDescr = "Interface.";
         static string ExName = "HW-1/2 Calculator V0";
@@ -54,6 +54,7 @@ namespace caUnit10Hw10_1Ver0
         }
         static void Main(string[] args)
         {
+            
             Calculator Calc = new Calculator();
 
             Console.WriteLine("{0}|{1}:Startig ", UnTitle, ExTitle);
