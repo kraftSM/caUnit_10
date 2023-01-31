@@ -4,18 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace caUnit10Hw2_2
-
+namespace caUnit10Hw2_2Ver0
 {
     internal class Program
     {
         static string UnitName = "Un:10";
-        static string UnDescr = "Interface.";
-        static string ExName = "HW-2/2 Calculator+";
+        static string UnDescr = "Interface";
+        static string ExName = "HW-2/2V0 Calculator+";
         static string ExDescr = "Calculator/Logger";
 
         static string inStr;
         static int Val1 = 0, Val2 = 0;
+        static Calculator Calc;
+        static Logger Log;
         static protected string UnTitle
         {
             get
@@ -35,7 +36,9 @@ namespace caUnit10Hw2_2
         {
             Console.WriteLine("{0}|{1}:Startig ", UnTitle, ExTitle);
             Console.WriteLine("{0} ", Promt);
-
+            Log = new Logger();
+            Calc = new Calculator(Log);
+             
             do
             {
                 Console.WriteLine("{0}  Введите первое слагаемое", Promt);
@@ -46,6 +49,9 @@ namespace caUnit10Hw2_2
                 Console.WriteLine("{0}  Введите второе слагаемое", Promt);
             }
             while (!isCorInput(Console.ReadLine(), ref Val2));
+
+            //Console.WriteLine("{0}  {1}+{2}={3}", Promt, Val1, Val2, Calc.GetResult(Val1, Val2));
+            Calc.GetResult(Val1, Val2);
 
 
             Console.WriteLine("\n{0}: Finishing.", ExTitle);
@@ -63,9 +69,9 @@ namespace caUnit10Hw2_2
             }
             catch (Exception ex)
             {
-                Console.WriteLine("{0} ошибка ввода данных {1}", Promt, ex.Message);
-                Console.WriteLine("{0} ошибка вводв данных {1}", Promt, ex.StackTrace);
-
+                //Console.WriteLine("{0} ошибка ввода данных {1}", Promt, ex.Message);
+                //Console.WriteLine("{0} ошибка вводв данных {1}", Promt, ex.StackTrace);
+                ((ILogger)Log).Exception(ex);
                 result = false;
                 return result;
             }
