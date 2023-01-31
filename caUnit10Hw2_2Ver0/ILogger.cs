@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace caUnit10Hw2_2
+namespace caUnit10Hw2_2Ver0
 {
     public interface ILogger
     {
