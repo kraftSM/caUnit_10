@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace caUnit10Hw10_1_1Ver0
+namespace caUnit10Hw2_2
 {
-    internal interface ICalculator
+    internal class Logger
     {
-        int GetResult(int a, int b);
     }
 }
