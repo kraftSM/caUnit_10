@@ -18,13 +18,13 @@ namespace caUnit10Hw2_2
 
         public void Event(string message)
         {
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(message);
             Console.ForegroundColor = ConsoleColor.White;
         }
         void ILogger.Exception(Exception ex)
         {
-            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(ex.Message);
             Console.WriteLine(ex.StackTrace);
             Console.ForegroundColor = ConsoleColor.White;

@@ -13,7 +13,7 @@ namespace caUnit10Hw2_2Ver0
         static string ExName = "HW-2/2V0 Calculator+";
         static string ExDescr = "Calculator/Logger";
 
-        static string inStr;
+        //static string inStr;
         static int Val1 = 0, Val2 = 0;
         static Calculator Calc;
         static Logger Log;
